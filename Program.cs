@@ -18,7 +18,7 @@ namespace WebApplication12
         }
 
        
-        public static IWebHostBuilder CreateHostBuilder(string[] args) =>
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                  .UseKestrel((context, options) =>
