@@ -16,5 +16,5 @@ jobs:
          docker tag aspnetapp registry.heroku.com/pinakidotnetcore/web
          docker push registry.heroku.com/pinakidotnetcore/web                
          curl https://cli-assets.heroku.com/install.sh | sh
-         heroku container:release web -a pinakidotnetcore
+         heroku container:release web --app pinakidotnetcore
      
